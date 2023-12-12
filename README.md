@@ -31,23 +31,23 @@ Make sure you have the following installed:
 
 ### Installation
 
- # 1. Clone the repository:
+  1. Clone the repository:
 
    ```bash
    git clone https://github.com/nandishbt/pinterest-clone.git
    cd pinterest-clone
 
 
- 2.Install dependencies:
+ -->Install dependencies:
     npm install
 
 
- 3.Set up your MongoDB database:
+ -->Set up your MongoDB database:
     Create a .env file in the project root and add your MongoDB connection URI:
         MONGODB_URI=mongodb://localhost:27017/your-database-name
 
 
- 4.Start the application:
+ -->Start the application:
     npm start
     --The app will be available at http://localhost:3000.
 
