@@ -38,16 +38,16 @@ Make sure you have the following installed:
    cd pinterest-clone
 
 
-Install dependencies:
+2.Install dependencies:
     npm install
 
 
-Set up your MongoDB database:
+3.Set up your MongoDB database:
     Create a .env file in the project root and add your MongoDB connection URI:
         MONGODB_URI=mongodb://localhost:27017/your-database-name
 
 
-Start the application:
+4.Start the application:
     npm start
     --The app will be available at http://localhost:3000.
 
