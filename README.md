@@ -31,33 +31,33 @@ Make sure you have the following installed:
 
 ### Installation
 
- #### 1. Clone the repository:
+ # 1. Clone the repository:
 
    ```bash
    git clone https://github.com/nandishbt/pinterest-clone.git
    cd pinterest-clone
 
 
- #### 2. Install dependencies:
+ 2.Install dependencies:
     npm install
 
 
- #### 3. Set up your MongoDB database:
+ 3.Set up your MongoDB database:
     Create a .env file in the project root and add your MongoDB connection URI:
         MONGODB_URI=mongodb://localhost:27017/your-database-name
 
 
- #### 4. Start the application:
+ 4.Start the application:
     npm start
     --The app will be available at http://localhost:3000.
 
 
-#### Usage:
+ Usage:
 *Visit http://localhost:3000 in your web browser.
 *Sign up or log in to start creating and sharing pins.
 *Explore and interact with pins by liking and commenting.
 
 
-#### Contributing:
+ Contributing:
 Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or create a pull request.
 
