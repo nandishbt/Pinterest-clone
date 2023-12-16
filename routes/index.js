@@ -12,7 +12,11 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/profile' ,isLoggedIn ,function(req,res,next){
-  res.send("HIIIIIII HOW rrrrr UUUUUUUU");
+  res.render("profile");
+})
+
+router.get('/feed',function(req,res,next){
+  res.render('feed');
 })
 
 router.get('/login' ,function(req,res){
