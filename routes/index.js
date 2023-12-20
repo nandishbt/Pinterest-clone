@@ -11,8 +11,12 @@ router.get('/', function(req, res, next) {
   res.render('index');
 });
 
-router.get('/profile' ,isLoggedIn ,function(req,res,next){
-  res.render("profile");
+router.get('/profile' ,isLoggedIn , async function(req,res,next){
+  var user = await usermodel.findOne({
+    username : req.session.passport.user
+    
+  });
+  res.render("profile", {user});
 })
 
 router.get('/feed',function(req,res,next){
@@ -44,7 +48,7 @@ router.post('/login',passport.authenticate('local',{successRedirect:'/profile',f
 router.get('/logout',function(req,res,next){
   req.logout(function(err){
     if(err){return next(err)};
-    res.redirect('/');
+    res.redirect('/login');
   })
 })
 
