@@ -23,6 +23,15 @@ const userSchema = new mongoose.Schema({
     
   },
 
+  prof: {
+    
+      type : mongoose.Schema.Types.ObjectId,
+      ref : 'profPost'
+      
+    
+    
+  },
+
   password: {
     type: String,
   

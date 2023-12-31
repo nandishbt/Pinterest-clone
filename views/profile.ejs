@@ -11,9 +11,31 @@
     <div class="containerper">
 
         <div class="cardper">
-          <div class="profile-picture">
-            <img src="https://images.unsplash.com/photo-1702517207949-a02e0cbc695d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Profile Picture">
-          </div>
+         
+            <% if(user.prof){%>
+              <div class="profile-picture">
+                <img src="/images/uploads/<%= user.prof.postText %>" alt="upload"/>
+              </div>
+              <% } %>
+
+              <% if(!user.prof){%>
+                <div class="profile-picture">
+                  <img src="https://laiacc.com/wp-content/uploads/2019/03/blank-profile-picture-973460_1280-705x705.png" alt="upload"/>
+                </div>
+                <% } %>
+           
+
+
+          
+
+          
+
+           
+
+          <form action="/profuploads" method="post" enctype="multipart/form-data">
+            <input type="file" name="file">
+            <button type="submit">upload</button>
+        </form>
 
   
           <h2 class="name"><%=user.fullname%></h2>
