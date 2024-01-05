@@ -16,9 +16,7 @@ This is a Pinterest clone created using Node.js, Express.js, MongoDB, and Mongoo
 
 - User authentication (Sign up, Log in, Log out)
 - Pin creation with title, description, and image URL
-- Pin likes and comments
-- User dashboard with pins and liked pins
-- Responsive design for various screen sizes
+- Uploading profile picture
 
 ## Getting Started
 
@@ -44,18 +42,18 @@ Make sure you have the following installed:
 
  -->Set up your MongoDB database:
     Create a .env file in the project root and add your MongoDB connection URI:
-        MONGODB_URI=mongodb://localhost:27017/your-database-name
+        MONGODB_URI=mongodb://localhost:27017/pinterestDB
 
 
  -->Start the application:
-    npm start
+    npx nodemon
     --The app will be available at http://localhost:3000.
 
 
  Usage:
 *Visit http://localhost:3000 in your web browser.
-*Sign up or log in to start creating and sharing pins.
-*Explore and interact with pins by liking and commenting.
+*Register or log in to start creating pins.
+
 
 
  Contributing:
