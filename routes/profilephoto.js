@@ -1,6 +1,10 @@
 const mongoose = require('mongoose');
+const mongodb = require('../DB/mongo');
 
-mongoose.connect("mongodb://127.0.0.1:27017/pinterestDB");
+mongodb()
+.then(function (){
+  console.log('Connected to MongoDB');
+})
 
 // Define the schema for the post
 const profpostSchema = new mongoose.Schema({

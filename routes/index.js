@@ -23,7 +23,6 @@ router.get('/profile' ,isLoggedIn , async function(req,res,next){
     
   }).populate('prof').populate('posts');
 
-  
 
   res.render("profile", {user});
 })
